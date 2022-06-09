@@ -7,7 +7,7 @@ Theory of Computation Lab., Yonsei University & Theory of Computation Lab., Kang
 Deciding computational complexity of algorithms is a really challenging problem even for human algorithm experts. Theoretically, the problem of deciding computational complexity of a given program is undecidable due to the famous Halting problem. In this paper, we propose to solve the problem using a deep learning-based approach by designing a neural network that comprehends the algorithmic nature of codes and estimates the computational complexity in the worst-case. First, we construct the code dataset called the CodeComple that consists of 3,500 Java codes submitted to programming competitions by human programmers with accurate complexity labels annotated by a group of algorithm experts. Then, we present several baseline algorithms using previous code understanding neural models such as CodeBERT, CuBERT, TreeBERT and so on. Lastly, we suggest our strong baseline model which is able to learn the compositional nature of codes by hierarchical neural architecture and data augmentation techniques for transforming a code while preserving the complexity of the implemented algorithm.
 
 
-## Dataset Introduction
+## Dataset Information
 
 Our dataset is inspired from the recently revealed AlphaCode. We constructed a dataset with the codes from the coding competition platform Codeforces. The dataset contains 3,817 codes on 7 classes, where each class has around 500 codes each. The 7 classes are constant, linear, quadratic, cubic, $log n$, $n log n$ and NP.
 
