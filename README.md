@@ -9,11 +9,11 @@ Deciding computational complexity of algorithms is a really challenging problem 
 
 ## Dataset Information
 
-![overview](./Overview (4).png)
+![overview](./images/overview.png)
 
-Our dataset is inspired from the recently revealed AlphaCode. We constructed a dataset with the codes from the coding competition platform Codeforces. The dataset contains 3,817 codes on 7 classes, where each class has around 500 codes each. The 7 classes are constant, linear, quadratic, cubic, $log n$, $n log n$ and NP.
+Our dataset is inspired from the recently revealed AlphaCode. We constructed a dataset with the codes from the coding competition platform Codeforces. The dataset contains 3,817 codes on 7 classes, where each class has around 500 codes each. The seven classes are constant, linear, quadratic, cubic, $\log n$, $n \log n$ and NP-hard.
 
-Figure~\ref{fig:workflow} illustrates the process of
+The figure above illustrates the process of
 the CodeComple dataset generation. For the first procedure we
 collect problems and solutions codes from CodeForces. The solution
 codes have correct solutions and wrong solutions, and have multiple
@@ -34,15 +34,11 @@ label each code to its corresponding complexity class.
 Algorithm problems have properties that can alter the complexity of
 their solution algorihtm implementations.
 We, therefore, provide the specific guideline to provides instructions and precautions for labelling the data.
-The detailed guideline is demonstrated in Section~\ref{ssec:guideline}.
 
 After the labelling, we use different programming experts to
 verify the class of each data that the human annotators assigned.
 The verification includes checking the precautions that are included
 in the guideline.
-The verification is the last procedure of our whole process of generating
-CodeComple dataset and we give detailed construction descriptions
-in Section~\ref{ssec:details_dataset}.
 
 
 ## Prerequisites
