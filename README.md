@@ -45,7 +45,7 @@ in the guideline.
 
 ## How to Use?
 
-Please refer to the Jupyter notebook file in `notebooks/data introduction.ipynb` for understanding the data file format.
+Please refer to the Jupyter notebook file in `notebook/dataset introduction.ipynb` for understanding the data file format.
 
 
 
