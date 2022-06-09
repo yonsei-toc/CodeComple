@@ -43,10 +43,10 @@ The verification includes checking the precautions that are included
 in the guideline.
 
 
-## Prerequisites
+## How to Use?
 
+Please refer to the Jupyter notebook file in `notebooks/data introduction.ipynb' for understanding the data file format.
 
-## Download
 
 
 ## Reference
