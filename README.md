@@ -4,14 +4,16 @@ Theory of Computation Lab., Yonsei University & Theory of Computation Lab., Kang
 
 ## Summary
 
-Deciding computational complexity of algorithms is a really challenging problem even for human algorithm experts. Theoretically, the problem of deciding computational complexity of a given program is undecidable due to the famous Halting problem. In this paper, we propose to solve the problem using a deep learning-based approach by designing a neural network that comprehends the algorithmic nature of codes and estimates the computational complexity in the worst-case. First, we construct the code dataset called the CodeComple that consists of 3,500 Java codes submitted to programming competitions by human programmers with accurate complexity labels annotated by a group of algorithm experts. Then, we present several baseline algorithms using previous code understanding neural models such as CodeBERT, CuBERT, TreeBERT and so on. Lastly, we suggest our strong baseline model which is able to learn the compositional nature of codes by hierarchical neural architecture and data augmentation techniques for transforming a code while preserving the complexity of the implemented algorithm.
+Deciding the computational complexity of algorithms is a really challenging problem even for human algorithm experts. Theoretically, the problem of deciding the computational complexity of a given program is undecidable due to the famous Halting problem. In this paper, we tackle the problem by designing a neural network that comprehends the algorithmic nature of codes and estimates the worst-case complexity.
+First, we construct a code dataset called the CodeComplex that consists of 4,200 Java codes submitted to programming competitions by human programmers and their complexity labels annotated by a group of algorithm experts. As far as we are aware, the CodeComplex dataset is by far the largest code dataset for the complexity prediction problem. Then, we present several baseline algorithms using the previous code understanding neural models such as CodeBERT, GraphCodeBERT, PLBART, and CodeT5. As the previous code understanding models do not work well on longer codes due to the code length limit, we propose the hierarchical Transformer architecture which takes method-level code snippets instead of whole codes and combines the method-level embeddings to the class-level embedding and ultimately to the code-level embedding. Moreover, we introduce pre-training objectives for the proposed model to induce the model to learn both the intrinsic property of the method-level codes and the relationship between the components.
+Lastly, we demonstrate that the proposed hierarchical architecture and pre-training objectives achieve state-of-the-art performance in terms of complexity prediction accuracy compared to the previous code understanding models.
 
 
 ## Dataset Information
 
 ![overview](./images/overview.png)
 
-Our dataset is inspired from the recently revealed AlphaCode. We constructed a dataset with the codes from the coding competition platform Codeforces. The dataset contains 3,817 codes on 7 classes, where each class has around 500 codes each. The seven classes are constant, linear, quadratic, cubic, $\log n$, $n \log n$ and NP-hard.
+Our dataset is inspired from the recently revealed AlphaCode. We constructed a dataset with the codes from the coding competition platform Codeforces. The dataset contains 4,817 codes on 7 classes, where each class has around 500 codes each. The seven classes are constant, linear, quadratic, cubic, $\log n$, $n \log n$ and NP-hard.
 
 The figure above illustrates the process of
 the CodeComple dataset generation. For the first procedure we
