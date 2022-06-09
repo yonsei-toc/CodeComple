@@ -47,6 +47,14 @@ in Section~\ref{ssec:details_dataset}.
 
 ## Reference
 
+To reference our work, please use the following paper.
+
+    @article{JeonBHHK22,
+        author  = {Mingi Jeon and Seung-Yeop Baik and Joonghyuk Hahn and Yo-Sub Han and Sang-Ki Ko},
+        title   = {{Deep Learning-based Code Complexity Prediction}},
+        year    = {2022},
+    }
+
 
 ## License
 
