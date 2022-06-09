@@ -1,4 +1,4 @@
-# CodeComple: Code Complexity Prediction Dataset
+# CodeComplex: Code Complexity Prediction Dataset
 By Seung-Yeob Baik, JoongHyuk Hahn, Mingi Jeon, Sang-Ki Ko and Yo-Sub Han\
 Theory of Computation Lab., Yonsei University & Theory of Computation Lab., Kangwon Natinoal University
 
